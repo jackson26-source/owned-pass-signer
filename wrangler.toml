@@ -1,0 +1,10 @@
+name = "owned-pass-signer"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# No KV, D1, or queues — this Worker is stateless on purpose. Every request
+# is signed and forgotten; nothing about a pass is ever stored here.
+
+# Set after deploy, by Jackson, never by a Claude session:
+#   wrangler secret put PASS_PRIVATE_KEY_PEM
+# See DEPLOY.md.
