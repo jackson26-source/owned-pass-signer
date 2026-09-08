@@ -1,0 +1,13 @@
+{
+  "name": "owned-pass-signer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Cloudflare Worker that builds and signs Apple Wallet passes for the Owned app.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

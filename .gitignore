@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+*.pem
+*.p12
+*.pkpass
