@@ -29,7 +29,11 @@ function buildPassJSON(fields) {
     organizationName: "Owned",
     serialNumber,
     description: `${itemName} — ${kindLabel.toLowerCase()}`,
-    logoText: "Owned",
+    // logoText removed: logo.png is now a real wordmark image (the word
+    // "Owned" drawn into the asset itself), so a separate logoText field
+    // would render as a second, redundant "Owned" right next to it —
+    // that duplication was the "Owned Owned" header bug. The wordmark
+    // image alone carries the brand mark now.
     generic: {
       primaryFields: [{ key: "item", label: "ITEM", value: itemName }],
       secondaryFields: [
